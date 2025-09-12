@@ -1,0 +1,17 @@
+# Maven
+target/
+
+# IDEs/Editors
+.idea/
+.project
+.classpath
+.settings/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SQLite DB file
+loja.db
+
