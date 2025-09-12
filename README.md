@@ -1,5 +1,9 @@
 # Laboratório — Integração com Banco de Dados (Java + JDBC)
 
+Professor: Luiz Ricardo Mantovani da Silva
+
+Bem-vindo(a)! Este laboratório prático de JDBC com SQLite foi preparado para você aprender, de forma guiada, como conectar, criar esquema, inserir, consultar, atualizar, remover e trabalhar com transações em Java.
+
 Ambiente recomendado: VS Code + Java Extension Pack + Maven. Usamos exclusivamente SQLite (sem servidor).
 
 ## Instruções rápidas
@@ -177,6 +181,7 @@ lab-jdbc/
       RemoveCliente.java
       PedidoTransacional.java
       MainDAO.java
+      DumpDB.java
     com/profluizricardomantovani/labjdbc/dao/ClienteDAO.java
     com/profluizricardomantovani/labjdbc/model/Cliente.java
 ```
@@ -184,3 +189,5 @@ lab-jdbc/
 ---
 
 Para dúvidas, consulte o material da aula e os comentários no código.
+
+Bom estudo! — Prof. Luiz Ricardo Mantovani da Silva
