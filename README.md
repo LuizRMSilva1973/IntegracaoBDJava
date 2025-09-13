@@ -6,6 +6,8 @@ Bem-vindo(a)! Este laboratório prático de JDBC com SQLite foi preparado para v
 
 Ambiente recomendado: VS Code + Java Extension Pack + Maven. Usamos exclusivamente SQLite (sem servidor).
 
+Wiki para iniciantes (Java/JDK/JVM, OO, JDBC e SQLite): veja a [Wiki do GitHub](https://github.com/LuizRMSilva1973/IntegracaoBDJava/wiki).
+
 ## Instruções rápidas
 - Entrar no módulo: `cd lab-jdbc`
 - Compilar: `mvn package`
