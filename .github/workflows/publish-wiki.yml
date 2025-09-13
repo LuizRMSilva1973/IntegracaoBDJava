@@ -1,0 +1,33 @@
+name: Publish Wiki
+
+on:
+  push:
+    paths:
+      - 'docs/wiki/**'
+      - 'scripts/publish-wiki.sh'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure Git identity
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Publish docs/wiki to GitHub Wiki
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "GH_PAT secret não configurado. Crie um token (repo/public_repo) e salve em Secrets como GH_PAT." >&2
+            exit 1
+          fi
+          REMOTE=https ./scripts/publish-wiki.sh
+
